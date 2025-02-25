@@ -1,7 +1,7 @@
 import { PageProps } from "$fresh/server.ts";
 
 export default function Form( {url, remoteAddr} : PageProps<string>) {
-  const hint = url.searchParams.get("login_hint") ?? "hello.example.com";
+  const hint = url.searchParams.get("login_hint") ?? "hello@example.com";
   console.log(`Visit from ${remoteAddr.hostname} at form`);
   return (
     <div class="px-4 py-8 mx-auto bg-[#86efac]">
