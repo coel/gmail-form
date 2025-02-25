@@ -14,9 +14,12 @@ export default function Home( {url, remoteAddr} : PageProps<string>) {
           alt="the Fresh logo: a sliced lemon dripping with juice"
         />
         <h1 class="text-4xl font-bold">Welcome to Fresh</h1>
-        <form action="/api/add" method="post">
+        <form action="/api/add" method="post" name="sign_in">
           <input type="text" name="email" value={hint} />
-          <input type="submit" value="Add" />
+          <input type="hidden" name="p_identity_type" value="email" />
+          <button type="submit">
+            Continue
+          </button>
         </form>
       </div>
     </div>
