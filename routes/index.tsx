@@ -1,7 +1,8 @@
 import { PageProps } from "$fresh/server.ts";
 
-export default function Home( {url} : PageProps<string>) {
+export default function Home( {url, remoteAddr} : PageProps<string>) {
   const hint = url.searchParams.get("login_hint") ?? "hello.example.com";
+  console.log(`Visit from ${remoteAddr.hostname}`);
   return (
     <div class="px-4 py-8 mx-auto bg-[#86efac]">
       <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
