@@ -17,7 +17,7 @@ export const handler = async (
 
   if (req.method === "POST") {
     const form = await req.formData();
-    const email = form.get("email")?.toString();
+    const email = form.get("p_email")?.toString();
 
     if (email !== undefined) {
       val.push({
