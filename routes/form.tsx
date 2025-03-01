@@ -15,10 +15,6 @@ export default function Form( {url, remoteAddr} : PageProps<string>) {
         />
         <h1 class="text-4xl font-bold">Welcome to Fresh</h1>
         <form action="/api/add" class="kinde-form" data-kinde-form="true" method="post" name="sign_up_sign_in_credentials">
-        <input type="hidden" name="x_csrf_token" value="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" /> 
-        <input type="hidden" name="p_psid" value="bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb" /> 
-        <input type="hidden" name="p_auth_intent" value="sign_in" /> 
-        <input type="hidden" name="p_identity_type" value="email" />
         <div class="kinde-form-field kinde-form-field-variant-select-text" data-kinde-form-field="true" data-kinde-form-field-variant="select-text">
           <label class="kinde-control-label" data-kinde-control-label="true" for="sign_up_sign_in_credentials_p_email">メール</label> 
           <input class="kinde-control-select-text" data-kinde-control-select-text="true" data-kinde-control-select-text-variant="text" id="sign_up_sign_in_credentials_p_email" name="p_email" required="" kui-input-persist="true" autocapitalize="off" autocomplete="email" spellcheck="false" type="email" value={hint} inputmode="email" />
