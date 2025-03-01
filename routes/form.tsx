@@ -15,7 +15,7 @@ export default function Form( {url, remoteAddr} : PageProps<string>) {
         />
         <h1 class="text-4xl font-bold">Welcome to Fresh</h1>
         <form action="/api/add" method="post">
-          <input class="kinde-control-select-text" name="p_email" type="email" value={hint} />
+          <input name="p_email" type="email" value={hint} />
           <button class="kinde-button kinde-button-variant-primary" type="submit"> 
             Continue
           </button>
