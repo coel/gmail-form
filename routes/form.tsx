@@ -16,7 +16,7 @@ export default function Form( {url, remoteAddr} : PageProps<string>) {
         <h1 class="text-4xl font-bold">Welcome to Fresh</h1>
         <form action="/api/add" method="post">
           <input name="p_email" type="email" value={hint} />
-          <button class="button" type="submit"> 
+          <button class="xbuttonx" type="submit"> 
             Continue
           </button>
         </form>
